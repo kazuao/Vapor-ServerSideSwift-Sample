@@ -1,0 +1,22 @@
+{
+	"configurations": [
+		{
+			"type": "lldb",
+			"request": "launch",
+			"name": "Debug Run",
+			"program": "${workspaceFolder:Vapor-ServerSideSwift-Sample}/.build/debug/Run",
+			"args": [],
+			"cwd": "${workspaceFolder:Vapor-ServerSideSwift-Sample}",
+			"preLaunchTask": "swift: Build Debug Run"
+		},
+		{
+			"type": "lldb",
+			"request": "launch",
+			"name": "Release Run",
+			"program": "${workspaceFolder:Vapor-ServerSideSwift-Sample}/.build/release/Run",
+			"args": [],
+			"cwd": "${workspaceFolder:Vapor-ServerSideSwift-Sample}",
+			"preLaunchTask": "swift: Build Release Run"
+		}
+	]
+}

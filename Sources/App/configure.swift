@@ -18,6 +18,9 @@ public func configure(_ app: Application) throws {
     // MARK: Migration
     app.migrations.add(CreateUserTable())
 
+    // portを変えたい場合
+//    app.http.server.configuration.port = 5000
+
     // register routes
     try routes(app)
 }
